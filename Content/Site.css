@@ -1,0 +1,102 @@
+﻿/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
+
+#navbar {
+    background-color: #418882; 
+    position: fixed;
+    top: 0px; /*no space above the nav bar*/
+    width: 100%;
+    margin-top: 0px;
+    left: 0px;
+}
+
+#SearchBox, .dropbox {
+    height: 30px;
+}
+
+.textbox, #Password1 {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    /*border-color: #d2d6d4;*/
+    /*background-color: #E8D5E1;*/
+    height: 35px;
+}
+
+.button {
+    border-style: none;
+    background-color: #418882;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.button:hover {
+    background-color: #3D8077;
+    color: white;
+}
+
+#moviesList {
+    width: 100%;
+}
+
+.movieDataList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.movieItem {
+    flex: 0 0 auto;
+    width: 190px;
+    margin: 15px;
+    text-align: center;
+}
+
+/*word wrap for movie titles*/
+.movieItem .movieTitleLabel {
+    display: inline-block;
+    width: 170px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.movieDataList a[id*='LinkButton_MovieTitle'] {
+    color: inherit;
+    text-decoration: none;
+}
+
+.gridview {
+    max-width: 750px;
+    background-color: none;
+    width: auto;
+}
+
+.gridview td { 
+    /*top, right, bottom, left*/
+    padding: 0 20px 20px 0;
+}
